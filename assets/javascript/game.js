@@ -51,6 +51,11 @@ var startGame = function () {
 
     $("#targetScore").html(targetScore);
     $("#yourScore").html(currentScore);
+    //Testing Console
+console.log("---------------------")
+console.log("Target Score:" + targetScore);
+console.log("Blue: " + crystal.blue.value +" | Red: " + crystal.red.value + " | Green: " + crystal.green.value + " | Yellow: " + crystal.yellow.value);
+console.log("---------------------")
 
 }
 
@@ -59,7 +64,8 @@ var addValues = function (crystal) {
 
     $("#yourScore").html(currentScore);
 
-    checkWin();
+
+    setTimeout(checkWin, 1000);
 
     console.log("Your Score: " + currentScore);
 }
